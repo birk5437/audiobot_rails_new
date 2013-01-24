@@ -42,4 +42,4 @@ DEPENDENCIES
   haml (~> 3.0.18)
   nifty-generators
   pg (~> 0.11.0)
-  rails (~> 2.3.14)
+  rails (~> 2.3.15)

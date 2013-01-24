@@ -1,1 +1,9 @@
-%h2 herpderp
+- semantic_form_for @song do |f|
+  - f.inputs do
+    = f.input :url
+    = f.input :title
+    = f.input :artist
+  - f.buttons do
+    = f.commit_button :button_html => { :value => "Save", :class => "save" }
+
+= link_to 'Go back', songs_path

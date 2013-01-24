@@ -1,1 +1,14 @@
-%h2 Index
+%h2 Songs
+%table
+  %tr
+    %th= "Title"
+    %th= "Artist"
+    %th= "URL"
+
+  - @songs.each do |song|
+    %tr
+      %td= song.title
+      %td= song.artist
+      %td= song.url
+
+= link_to 'New song', new_song_path
