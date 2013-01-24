@@ -9,18 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121006233516) do
+ActiveRecord::Schema.define(:version => 20130124024456) do
 
-  create_table "quotes", :force => true do |t|
-    t.string   "symbol"
-    t.decimal  "price",      :precision => 10, :scale => 2
-    t.date     "quote_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "strategies", :force => true do |t|
-    t.string   "name"
+  create_table "songs", :force => true do |t|
+    t.string   "title"
+    t.string   "artist"
+    t.string   "file_path"
+    t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

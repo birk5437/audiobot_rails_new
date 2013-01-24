@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: tmatic_dev
+  database: audiobot_dev
   username: burke
   password:
 
